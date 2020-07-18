@@ -1,0 +1,175 @@
+Codepen project link https://codepen.io/samkazla/full/XWXYewm
+
+Copy the questions below into the first-lastname.txt file on your github repo - answer each question and then push your changes. 
+
+    1. What is Semantic HTML? 
+A semantic element clearly describes its meaning to both the browser and the developer. Examples of semantic elements: <form>, <table>, and <article> - Clearly defines its content.
+
+    2. What is HTML used for? 
+HTML stands for Hyper Text Markup Language. (Hypertext Markup Language) HTML is the language used to create Web pages for display in Web Browsers. In short, it is the code for creating web pages, using tags and other commands that a browser reads and converts into the normal web pages that people see.
+
+    3. What is an attribute and where do we put it? 
+HTML attributes provide additional information about HTML elements.
+For example The <a> tag defines a hyperlink. The href attribute specifies the URL of the page the link goes to:
+
+    4. What is the h1 tag used for? How many times should I use it on a page?
+The <h1> to <h6> tags are used to define HTML headings. H1 should be used only once.
+
+    5. Name two tags that have required attributes
+Href and img
+
+    6. What do we put in the head of our HTML document? 
+<head> </head>
+    7. What is an id? 
+The id selector is used to specify a style for a single, unique element. The id selector uses the id attribute of the HTML element, and is defined with a "#"
+
+    8. What elements can I add an id to? 
+Any element 
+#
+    9. How many times can I use the same id on a page? 
+Once
+
+    10. What is a class? 
+The HTML class attribute is used to specify a class for an HTML element.
+Multiple HTML elements can share the same class. (.)
+
+    11. What elements can I add a class to? 
+.section and more
+
+    12. How many times can I use the same class on a page? 
+Multiple 
+
+    13. How do I get my link to open in a new tab? Example
+<a href="https://www.w3schools.com" target="_blank">Visit W3Schools.com!</a> 
+
+    14. What is the alt attribute in the image tag used for? 
+The alt attribute is the HTML attribute used in HTML and XHTML documents to specify alternative text (alt text) that is to be rendered when the element to which it is applied cannot be rendered.
+
+    15. How do I reference an id?
+In html <h1 id="myHeader">My Header</h1> in css #myHeader
+
+    16. What is the difference between a section and a div
+<section> 
+
+This means that the content inside will be grouped i.e. it'll relate to a single theme, and will appear as an entry in an outline of the page.
+
+<div> 
+
+This tag does not convey any meaning, aside from any found in it's class, lang and title attributes.
+    
+    17. What is CSS used for? 
+Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a document written in a markup language like HTML.
+
+    18. How to we select an element? Example - every h2 on the page
+On css it would look like this h2 {color: ####;}
+
+    19. What is the difference between a class and an id? - Give me an example of when I might use each one
+#- ID (specific item within the block that you want to style) -can only be used once
+.-Class (it could be a section of html that you want to style (block)) 
+
+    20. How do we select classes in CSS?
+To select elements with a specific class, write a period (.) character, followed by the name of the class.
+
+    21. How do we select a p element with a single class of “human””?
+<div class= “human”></div> on css .human p
+
+    22. What is a parent child selector? When would this be useful? 
+The ("parent > child") selector selects all elements that are a direct child of the specified element. For example, Unordered List<UL> is a parent to List Item <LI>
+
+    23. How do you select all links within a div with the class of sidebar?
+:link
+    24. What is a pseudo selector?
+A pseudo-class is a selector that selects elements that are in a specific state, e.g. they are the first element of their type, or they are being hovered over by the mouse pointer.
+
+    25. What do we use the change the spacing between lines?
+In CSS The line-height property specifies the height of a line.
+
+    26. What do we use to change the spacing between letters?
+The letter-spacing property increases or decreases the space between characters in a text.
+
+    27. What do we use to to change everything to CAPITALS? lowercase? Capitalize?
+The text-transform property controls the capitalization of text. Ex text-transform: capitalize;
+
+    28. How do I add a 1px border around my div that is dotted and black?
+<style type='text/css'>
+    #mydiv { border: dotted 1px black; }
+</style>
+
+    29. How do I select everything on the page?
+In CSS The * selector selects all elements. 
+
+    30. How do I write a comment in CSS?
+you start a comment with /* , and end it with */ . 
+
+    31. How do I find out what file I am in, when I am using the command line? 
+$ pwd
+
+    32. Using the command line - how do I see a list of files/folders in my current folder?
+$ls
+
+    33. How do I remove a file via the command line? Why do I have to be careful with this? 
+$ rm - it permanently deletes the file
+
+    34. Why should I use version control? 
+Version control is important to keep track of changes — and keep every team member working off the latest version. You should use version control software for all code, files, and assets that multiple team members will collaborate on.
+
+    35. How often should I commit to github?
+After making new changes to the file every 30-60 min
+
+    36. What is the command we would use to push our repo up to github?
+$ git push 
+    
+    37. Walk me through Lambda's git flow. 
+Create YOUR OWN version of Repo ---> (Fork)
+
+Add your TL as collaborator
+
+on GitHub:
+Settings -> Collaborators -> Add Collaborator (use your TL's handle)
+(I'd suggest grabbing the invite tag and DM it to your TL on Slack at this point)
+
+Clone YOUR Repo
+
+back on your machine:
+git clone <your-repo-address>
+
+Create a branch (the one you are going to be working on)
+
+cd <repo directory>
+git checkout -b 'firstname-lastname'
+
+Push your new branch up to GitHub and make all future pushes to that branch
+
+git push -u origin firstname-lastname
+
+on GitHub:
+Compare & Pull Request -> Base: YOUR MASTER (Not the Lambda Master)
+compare fork: YOUR FORK
+
+Add your TL as a reviewer on the Pull Request
+
+On the 'Open a Pull Request' page click on Reviewers. If your TL has accepted your invite, then you should be able to select them here. If not, then they haven't accepted the invite, and come back later...
+
+Your TL will merge the work into YOUR Master fork when they have reviewed and approved it.
+
+
+
+Stretch Questions
+
+    1. What is the difference between an inline element and a block element?
+A block-level element always starts on a new line and takes up the full width available (stretches out to the left and right as far as it can).
+An inline element does not start on a new line and it only takes up as much width as necessary.
+
+
+    2. What happens when an element is positioned absolutely? 
+An absolutely positioned element no longer exists in the normal document layout flow. Instead, it sits on its own layer separate from everything else.
+
+    3. How do I make an element take up only the amount of space it needs but also have the ability to give it a width? 
+The padding property in CSS defines the innermost portion of the box model, creating space around an element’s content, inside of any defined margins and/or borders.
+
+    4. Name 3 elements that are display block by default, 2 elements that are display inline by default and 1 element that is display inline-block by default
+<nav> <footer> <p>, <a> <span>, <button>
+
+    5. In your own words, explain the box model. What is the "fix" for the box model, in other words, how do we make all elements respect the width we've given them? 
+The box model allows us to add a border around elements, and to define space between elements.  It needs width, padding, border and margin.
+
